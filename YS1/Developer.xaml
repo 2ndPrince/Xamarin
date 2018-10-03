@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+             Title="Developer"
+             BackgroundColor="#a911c4"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YS1.Developer">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="뭘봐"
+                FontSize="50"
+                TextColor="White"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label FontSize="18" TextColor="White" HorizontalOptions="Center">
+Trying to design mobile app using Xamarin Form
+이응두 화이팅!!                
+            </Label>
+            <Button Text="Button 1" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
