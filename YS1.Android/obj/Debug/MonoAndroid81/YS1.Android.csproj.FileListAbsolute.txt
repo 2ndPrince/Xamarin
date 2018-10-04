@@ -105,7 +105,9 @@ C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1.Android\obj\Debug\MonoAndroid81\
 C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
 C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1.Android\obj\Debug\MonoAndroid81\android\assets\YS1.Android.pdb
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\bin\Debug\netstandard2.0\YS1.dll
 C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1.Android\obj\Debug\MonoAndroid81\linksrc\YS1.Android.pdb
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1.Android\bin\Debug\YS1.dll.mdb
 C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1.Android\obj\Debug\MonoAndroid81\linksrc\Plugin.SimpleAudioPlayer.dll.mdb
 C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

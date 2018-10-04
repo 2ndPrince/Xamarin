@@ -12,26 +12,12 @@ namespace YS1
         public MainPage()
         {
             InitializeComponent();
+
+            btnStart.Clicked += (s, e) => Navigation.PushAsync(new StartGame());
+            btnScore.Clicked += (s, e) => Navigation.PushAsync(new LeaderBoard());
+            btnDeveloper.Clicked += (s, e) => Navigation.PushAsync(new Developer());
+            btnMusic.Clicked += (s, e) => Navigation.PushAsync(new Music());
         }
 
-        async private void Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new StartGame());
-        }
-
-        async private void Button_Clicked_1(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new LeaderBoard());
-        }
-
-        async private void Button_Clicked_2(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Developer());
-        }
-
-        async private void Button_Clicked_3(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Music());
-        }
     }
 }

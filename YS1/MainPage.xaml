@@ -20,11 +20,11 @@
             <Label FontSize="30" FontAttributes="Bold" Text="응두와 ADC고고씽" TextColor="White" HorizontalOptions="Center"/>
             <Label FontSize="18" Text="트리스타나 미스포춘의 장인 이응두" TextColor="White" HorizontalOptions="Center"/>
         </StackLayout>
-        
-        <Button Grid.Row="2" Text="START GAME" BackgroundColor="#0fc64c" TextColor="White" Clicked="Button_Clicked"></Button>
-        <Button Grid.Row="3" Text="SCORE LEADERBOARD" BackgroundColor="#0fc64c" TextColor="White" Clicked="Button_Clicked_1"></Button>
-        <Button Grid.Row="4" Text="DEVELOPER INFO" BackgroundColor="#0fc64c" TextColor="White" Clicked="Button_Clicked_2"></Button>
-        <Button Grid.Row="5" Text="Music Player(Beta)" BackgroundColor="#0fc64c" TextColor="White" Clicked="Button_Clicked_3"></Button>
+
+        <Button x:Name="btnStart" Grid.Row="2" Text="START GAME" BackgroundColor="#0fc64c" TextColor="White"/>
+        <Button x:Name="btnScore" Grid.Row="3" Text="SCORE LEADERBOARD" BackgroundColor="#0fc64c" TextColor="White"/>
+        <Button x:Name="btnDeveloper" Grid.Row="4" Text="DEVELOPER INFO" BackgroundColor="#0fc64c" TextColor="White"/>
+        <Button x:Name="btnMusic" Grid.Row="5" Text="Music Player(Beta)" BackgroundColor="#0fc64c" TextColor="White"/>
     </Grid>
 
 </ContentPage>
