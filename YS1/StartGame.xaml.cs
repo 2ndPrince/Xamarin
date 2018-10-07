@@ -1,33 +1,84 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using YS1.Models;
 
 namespace YS1
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class StartGame : ContentPage
 	{
-        private int _stage = 0;
+        private static int _stage;
+        Stages stages;
+        static Random digit_random = new Random();      
+        
         public StartGame ()
 		{
             InitializeComponent();
-        }
-
-        private void Clear_Clicked(object sender, EventArgs e)
+            _stage = 1;
+            
+        } // Start Game
+        
+        private void Clear_UserInput(object sender, EventArgs e)
         {
-            display.Text = "0";
-            _stage = 0;
+            userinput_display.Text = "";
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        async void Show_Mission()
+        {
+            stages = new Stages(_stage);
+            for (int i = 0; i < _stage; i++)
+            {
+                mission_display.Text = stages.Mission_String[i];
+                await Task.Delay(1000);
+            }
+        }
+
+        private void Check_Answer(object sender, EventArgs e)
+        {
+            stages.User_String = userinput_display.Text;
+
+            userinput_display.Text = "";
+            mission_display.Text = "";            
+
+            if (stages.CheckAnswer())
+            {
+                DisplayAlert("ANSWER", "CORRECT", "OK");
+            }
+            else
+            {
+                DisplayAlert("ANSWER", "TRY AGAIN", "OK");
+            }
+
+        }
+        
+        private void Clear_Stage(object sender, EventArgs e)
+        {
+            mission_display.Text = "";
+            cur_stage.Text = "1";
+            _stage = 1;
+        }
+
+        private void Number_UserInput(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            userinput_display.Text = userinput_display.Text + b.Text;
+        }
+        
+        private void stage_minus(object sender, EventArgs e)
+        {
+            _stage--;
+            if (_stage < 1) { _stage = 1; }
+            cur_stage.Text = _stage.ToString();
+        }
+        private void stage_plus(object sender, EventArgs e)
         {
             _stage++;
-            display.Text = _stage.ToString();
+            cur_stage.Text = _stage.ToString();
         }
+
+       
     }
 }

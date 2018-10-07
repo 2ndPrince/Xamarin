@@ -6,7 +6,10 @@
              x:Class="YS1.StartGame">
     <Grid RowSpacing="10" ColumnSpacing="10" Padding="40">
         <Grid.RowDefinitions>
-            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -14,24 +17,33 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label x:Name="display" Grid.Row="0" Grid.ColumnSpan="3" Text="0" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontSize="50"></Label>
+        <StackLayout Grid.Row="0" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="20" Padding="10, 0">
+            <Button Text="-" FontSize="Small" Clicked="stage_minus"/>
+            <Label  x:Name="cur_stage" Text="1" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Text="+" FontSize="Small" Clicked="stage_plus"/>
+        </StackLayout>
+        
+        <Label x:Name="mission_display" Grid.Row="1" Grid.ColumnSpan="3" Text="" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large"></Label>
+        <Label x:Name="userinput_display" Grid.Row="2" Grid.ColumnSpan="3" Text="" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"></Label>
 
-        <Button BorderRadius="30" Grid.Row="1" Grid.Column="0" Text="1" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-        <Button BorderRadius="30" Grid.Row="1" Grid.Column="1" Text="2" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-        <Button BorderRadius="30" Grid.Row="1" Grid.Column="2" Text="3" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+        <Button BorderRadius="30" Grid.Row="3" Grid.Column="0" Text="1" FontSize="Medium" TextColor="#28282c" BackgroundColor="#fff" VerticalOptions="Center" Clicked="Number_UserInput"/>
+        <Button BorderRadius="30" Grid.Row="3" Grid.Column="1" Text="2" FontSize="Medium" TextColor="#28282c" BackgroundColor="#fff" VerticalOptions="Center" Clicked="Number_UserInput"/>
+        <Button BorderRadius="30" Grid.Row="3" Grid.Column="2" Text="3" FontSize="Medium" TextColor="#28282c" BackgroundColor="#fff" VerticalOptions="Center" Clicked="Number_UserInput"/>
 
-        <Button BorderRadius="30" Grid.Row="2" Grid.Column="0" Text="4" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-        <Button BorderRadius="30" Grid.Row="2" Grid.Column="1" Text="5" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-        <Button BorderRadius="30" Grid.Row="2" Grid.Column="2" Text="6" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+        <Button BorderRadius="30" Grid.Row="4" Grid.Column="0" Text="4" FontSize="Medium" TextColor="#28282c" BackgroundColor="#fff" VerticalOptions="Center" Clicked="Number_UserInput"/>
+        <Button BorderRadius="30" Grid.Row="4" Grid.Column="1" Text="5" FontSize="Medium" TextColor="#28282c" BackgroundColor="#fff" VerticalOptions="Center" Clicked="Number_UserInput"/>
+        <Button BorderRadius="30" Grid.Row="4" Grid.Column="2" Text="6" FontSize="Medium" TextColor="#28282c" BackgroundColor="#fff" VerticalOptions="Center" Clicked="Number_UserInput"/>
 
-        <Button BorderRadius="30" Grid.Row="3" Grid.Column="0" Text="7" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-        <Button BorderRadius="30" Grid.Row="3" Grid.Column="1" Text="8" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-        <Button BorderRadius="30" Grid.Row="3" Grid.Column="2" Text="9" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+        <Button BorderRadius="30" Grid.Row="5" Grid.Column="0" Text="7" FontSize="Medium" TextColor="#28282c" BackgroundColor="#fff" VerticalOptions="Center" Clicked="Number_UserInput"/>
+        <Button BorderRadius="30" Grid.Row="5" Grid.Column="1" Text="8" FontSize="Medium" TextColor="#28282c" BackgroundColor="#fff" VerticalOptions="Center" Clicked="Number_UserInput"/>
+        <Button BorderRadius="30" Grid.Row="5" Grid.Column="2" Text="9" FontSize="Medium" TextColor="#28282c" BackgroundColor="#fff" VerticalOptions="Center" Clicked="Number_UserInput"/>
 
-        <Button BorderRadius="30" Grid.Row="4" Grid.Column="0" Text="Back" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-        <Button BorderRadius="30" Grid.Row="4" Grid.Column="1" Text="0" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
-        <Button BorderRadius="30" Grid.Row="4" Grid.Column="2" Text="Clear" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" Clicked="Clear_Clicked"/>
+        <Button BorderRadius="30" Grid.Row="6" Grid.Column="0" Text="UC" FontSize="Medium" TextColor="#28282c" BackgroundColor="#fff" VerticalOptions="Center" Clicked="Clear_UserInput"/>
+        <Button BorderRadius="30" Grid.Row="6" Grid.Column="1" Text="0" FontSize="Medium" TextColor="#28282c" BackgroundColor="#fff" VerticalOptions="Center" Clicked="Number_UserInput"/>
+        <Button BorderRadius="30" Grid.Row="6" Grid.Column="2" Text="C" FontSize="Medium" TextColor="#28282c" BackgroundColor="#fff" VerticalOptions="Center" Clicked="Clear_Stage"/>
 
-        <Button BorderRadius="30" Grid.Row="5" Grid.ColumnSpan="3" Text="Increase" FontSize="30" TextColor="#28282c" BackgroundColor="#96ca2d" Clicked="Button_Clicked"/>
+        <Button BorderRadius="30" Grid.Row="7" Grid.ColumnSpan="3" Text="Generate" FontSize="Medium" TextColor="#28282c" BackgroundColor="#96ca2d" Clicked="Show_Mission"/>
+
+        <Button BorderRadius="30" Grid.Row="8" Grid.ColumnSpan="3" Text="Submit" FontSize="Medium" TextColor="#28282c" BackgroundColor="#96ca2d" Clicked="Check_Answer"/>
     </Grid>
 </ContentPage>

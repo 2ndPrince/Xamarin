@@ -1,0 +1,16 @@
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\bin\Release\netstandard2.0\YS1.deps.json
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\bin\Release\netstandard2.0\YS1.dll
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\bin\Release\netstandard2.0\YS1.pdb
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Release\netstandard2.0\YS1.csprojAssemblyReference.cache
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Release\netstandard2.0\Developer.xaml.g.cs
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Release\netstandard2.0\LeaderBoard.xaml.g.cs
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Release\netstandard2.0\Music.xaml.g.cs
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Release\netstandard2.0\StartGame.xaml.g.cs
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Release\netstandard2.0\YS1.csproj.CoreCompileInputs.cache
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Release\netstandard2.0\YS1.AssemblyInfoInputs.cache
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Release\netstandard2.0\YS1.AssemblyInfo.cs
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Release\netstandard2.0\YS1.dll
+C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Release\netstandard2.0\YS1.pdb
