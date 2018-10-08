@@ -10,10 +10,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\a1.wav" />
+    <None Remove="Resources\b1.wav" />
+    <None Remove="Resources\c1.wav" />
+    <None Remove="Resources\d1.wav" />
+    <None Remove="Resources\e1.wav" />
+    <None Remove="Resources\f1.wav" />
+    <None Remove="Resources\g1.wav" />
     <None Remove="Resources\rainandtears.mp3" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Resources\a1.wav" />
+    <EmbeddedResource Include="Resources\b1.wav" />
+    <EmbeddedResource Include="Resources\c1.wav" />
+    <EmbeddedResource Include="Resources\d1.wav" />
+    <EmbeddedResource Include="Resources\e1.wav" />
+    <EmbeddedResource Include="Resources\f1.wav" />
+    <EmbeddedResource Include="Resources\g1.wav" />
     <EmbeddedResource Include="Resources\rainandtears.mp3" />
   </ItemGroup>
 
@@ -41,5 +55,9 @@
     <EmbeddedResource Update="StartGame.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Audios\" />
   </ItemGroup>
 </Project>

@@ -9,6 +9,7 @@ using Xamarin.Forms.Xaml;
 
 using Plugin.SimpleAudioPlayer;
 
+
 namespace YS1
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -19,8 +20,7 @@ namespace YS1
         public Music ()
 		{
 			InitializeComponent ();
-            player.Load("rainandtears.mp3");
-            
+            player.Load("rainandtears.mp3");            
 		}
 
         private void Button_Clicked(object sender, EventArgs e) // play

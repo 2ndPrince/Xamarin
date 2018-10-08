@@ -1,7 +1,6 @@
 C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\bin\Debug\netstandard2.0\YS1.deps.json
 C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\bin\Debug\netstandard2.0\YS1.dll
 C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\bin\Debug\netstandard2.0\YS1.pdb
-C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Debug\netstandard2.0\YS1.csprojAssemblyReference.cache
 C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Debug\netstandard2.0\Developer.xaml.g.cs
 C:\Users\YOUNGSEOK LEE\source\repos\YS1\YS1\YS1\obj\Debug\netstandard2.0\LeaderBoard.xaml.g.cs

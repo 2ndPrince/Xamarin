@@ -18,7 +18,7 @@ namespace YS1.Models
             string[] temp = new string[stage];
             for (int i = 0; i < stage; i++)
             {
-                temp[i] = random.Next(1, 10).ToString();
+                temp[i] = random.Next(1, 7).ToString();
             }
             Mission_String = temp;
         }       

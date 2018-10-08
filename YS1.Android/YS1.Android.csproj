@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -102,7 +105,28 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Assets\rainandtears.mp3" />
+    <AndroidAsset Include="Assets\rainandtears.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\a1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\b1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\c1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\d1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\e1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\f1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\g1.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
